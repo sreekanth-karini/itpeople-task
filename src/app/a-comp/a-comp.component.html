@@ -1,0 +1,20 @@
+<!-- Component A showing input to collect user entered value -->
+
+<div class="border-a">
+  
+  <h2>Component - A</h2>
+  
+  <!-- Form -->
+  <form #myForm="ngForm">
+    <div class="form-group">
+      <!-- Input -->
+      <label for="fullname">Full Name:</label>
+      <input type="text" class="form-control" id="name" name="fullname" 
+        [(ngModel)]="fullName" required>
+    </div>
+    <!-- Submit -->
+    <button type="submit" class="btn btn-primary" [disabled]="!myForm.valid"
+    (click)="sendNameToMain()">Submit</button>
+  </form>
+
+</div>

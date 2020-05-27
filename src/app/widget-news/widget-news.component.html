@@ -1,0 +1,17 @@
+<!-- List of Posts -->
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let p of posts;">
+  	<div class="panel panel-primary">
+  		<div class="panel-heading">
+  			<p>ID: {{p.id}}</p>
+  		</div>
+  		<div class="panel-body">
+  			<h3>Title: {{p.title}}</h3>
+  			<p><b>Body:</b> {{p.body}}</p>
+  		</div>
+  		<div class="panel-footer">
+  			<p>User ID: {{p.userId}}</p>
+  		</div>
+  	</div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<!-- Main component view to show component A and component B -->
+
+<!-- Component A -->
+<app-a-comp (sendName)="getNameFromA($event)"></app-a-comp>
+<br>
+<!-- Component B -->
+<app-b-comp [fullName]="fullName"></app-b-comp>
